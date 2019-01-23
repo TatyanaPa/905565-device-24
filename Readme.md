@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Tatya Maximenk](https://up.htmlacademy.ru/htmlcss/24/user/905565).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга ветер] (https://htmlacademy.ru/profile/id73199).
 
 ---
 
