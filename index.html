@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML
+      и CSS, уровень 1</a>».</p>
+  <header class="main-header">
+    <a class="main-header-logo">
+      <img src="img/index-logo.svg" width="368" height="153" alt="Логотип DIVICE">
+    </a>
+    <nav class="main-navigation">
+      <ul class="site-navigation site-navigation-user">
+        <li class="seach"><a href="seach.html">Поиск по сайту</a></li>
+        <li><a href="login-link.html">Войти</a></li>
+        <li><a href="compare.html">Сравнить</a></li>
+        <li><a href="basket.html">Корзина</a></li>
+      </ul>
+      <ul class="site-navigation site-navigation-bottom">
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="assurance.html">Гарантия</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="visually-hidden">DIVICE</h1>
+
+    <section class="aboutus">
+      <hr>
+      <!--Либо вместо hr указать псевдоэлемен before к h2  -->
+      <h2 class="aboutus">О нас</h2>
+
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими транспортными
+        компаниями:</p>
+      <ul>
+        <li><a href="info.html">Деловые линии</a></li>
+        <li><a href="info.html">Автотрейдинг</a></li>
+        <li><a href="info.html">ЖелДорЭкспедиция</a></li>
+      </ul>
+
+      <a class="more_read" href="info.html">Подробнее о нас</a>
+
+    </section>
+
+    <section class="contacts">
+
+      <hr>
+      <!-- Либо вместо hr указать псевдоэлемен before к h2 -->
+      <h2 class="aboutus">Контакты</h2>
+      <!--Здесь намеренно оставила класс aboutus, так как одинаковый по стилю -->
+
+
+      <p>Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки.
+        Всякое бывает.</p>
+
+      <a class="map">
+        <img clas="map" src="img/map.svg" width="368" height="153" alt="Карта расположения офиса">
+      </a>
+
+      <a class="more_read" href="info.html">Напишите нам</a>
+
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+
+    <div footer-adress>
+      <img src="img/footer-logo.svg" width="368" height="153" alt="Логотип DIVICE">
+      <address>г. Москва, ул. Строителей, 15</address>
+      <div></div>
+      <!--желтая полосочка-->
+    </div>
+
+    <nav class="main-navigation">
+      <ul class="site-navigation site-navigation-user">
+        <li><a href="input.html">Войти</a></li>
+        <li><a href="compare.html">Сравнить</a></li>
+        <li><a href="basket.html">Корзина</a></li>
+      </ul>
+
+      <a class="social-button" href="#">Фэйсбук</a>
+      <a class="social-button" href="#">Инстаграм</a>
+      <a class="social-button" href="#">Твитер</a>
+
+    </nav>
+
+    <nav>
+      <ul class="site-navigation site-navigation-bottom">
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="assurance.html">Гарантия</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+
+      <span class="phone">Тел.+7(495)495-95-95</span>
+
+      <a class="akadem-logo" href="https://htmlacademy.ru">
+        <img src="img/akadem.svg" width="368" height="153" alt="Логотип Академии">
+      </a>
+    </nav>
+
+  </footer>
+</body>
+
 </html>
