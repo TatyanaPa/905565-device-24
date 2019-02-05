@@ -3,24 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс</title>
+  <title>indexHTML Academy: Девайс</title>
 </head>
 
 <body>
 
   <header class="main-header">
-    <a class="main-header-logo">
+    <a class="mainLogo">
       <img src="img/image_index/logo_divice.svg" width="100" height="50" alt="Логотип DIVICE">
     </a>
     <nav class="main-navigation">
       <div class="site-navigation site-navigation-user">
         <a class="seach" href="seach.html">Поиск по сайту</a>
-        <a href="login-link.html">Войти</a>
+        <a class="login-link" href="login.html">Войти</a>
         <a href="compare.html">Сравнить</a>
         <a href="basket.html">Корзина</a>
       </div>
       <ul class="site-navigation site-navigation-bottom">
-        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li><a href="catalog.html">Каталог товаров</a>
+          <ul class="dropMenue">
+         
+              <li><a href="virtualReality.html">Виртуальная реальность</a></li>
+         <a href="monopods.html">Моноподы для селфи</a>
+            <li> <a href="actionCameras.html">Экшн-камеры</a></li>
+             <li><a href="fitnessBraselet.html">Фитнес-браслеты</a></li>
+             <li><a href="smartWatch.html">Умные часы</a></li>
+            <li> <a href="quadcopters.html">Квадрокоптеры</a></li>
+             </ul>
+        </li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="assurance.html">Гарантия</a></li>
         <li><a href="contact.html">Контакты</a></li>
@@ -33,7 +43,7 @@
     <section class="aboutus">
       <hr>
       <!--Либо вместо hr указать псевдоэлемен before к h2  -->
-      <h2 class="about_contact">О нас</h2>
+      <h2 class="about-contact">О нас</h2>
 
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
 
@@ -45,7 +55,7 @@
         <li><a href="info.html">ЖелДорЭкспедиция</a></li>
       </ul>
 
-      <a class="more_read" href="info.html">Подробнее о нас</a>
+      <a class="moreread-righttous" href="info.html">Подробнее о нас</a>
 
     </section>
 
@@ -53,9 +63,8 @@
 
       <hr>
       <!-- Либо вместо hr указать псевдоэлемен before к h2 -->
-      <h2 class="about_contact">Контакты</h2>
+      <h2 class="about-contact">Контакты</h2>
       <!--Здесь намеренно оставила класс aboutus, так как одинаковый по стилю -->
-
 
       <p>Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки.
         Всякое бывает.</p>
@@ -64,7 +73,7 @@
         <img class="map" src="img/image_index/map-png.png" width="368" height="153" alt="Карта расположения офиса">
       </a>
 
-      <a class="more_read" href="info.html">Напишите нам</a>
+      <a class="moreread-righttous" href="info.html">Напишите нам</a>
 
     </section>
   </main>
@@ -86,9 +95,9 @@
         <li><a href="basket.html">Корзина</a></li>
       </ul>
 
-      <a class="social-button" href="#">Фэйсбук</a>
-      <a class="social-button" href="#">Инстаграм</a>
-      <a class="social-button" href="#">Твитер</a>
+      <a class="social-button" href="#" areal-lebal="Ссылка на соц. сеть Фэйсбук">Ф</a>
+      <a class="social-button" areal-lebal="Ссылка на соц. сеть Инстаграм" href="#">И</a>
+      <a class="social-button" areal-lebal="ССылка на соц. сеть Твитер" href="#">Т</a>
 
     </nav>
 
@@ -107,6 +116,59 @@
     </nav>
 
   </footer>
+  <section class="modal modalLogin">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <form class="loginForm" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit">
+        Войти
+      </button>
+    </form>
+    <button class="modalClose" type="button">
+      Закрыть
+    </button>
+  </section>
+
+  <section class="modal modalMail">
+      <h2 class="hMailHidden">Напишите нам</h2>
+      <!--или здесь можно h1?-->
+
+      <img src="img/image_index/modal-close.svg" width="30" height="30" alt="Закрыть" aria-label="Закрыть">
+
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="name-email-righttous"><label>Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия" required>
+          </label>
+        </p>
+        <p class="name-email-righttous"><label>Ваш e-mail:
+            <input type="email" name="email" placeholder="e-mail@example.com" required>
+          </label>
+        </p>
+        <p class="name-email-righttous">
+          <label for="field-letter">Текст письма: </label><br>
+          <input type="text" name="mail" placeholder="В свободной форме" id="field-letter">
+   <br>
+        <p><button class="moreread-righttous" type="submit">Отправить</button>
+       
+      </form>
+
+  </section>
 </body>
 
 </html>
