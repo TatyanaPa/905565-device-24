@@ -1,0 +1,339 @@
+
+
+@font-face { 
+    font-family: "Gilroy Light";
+    src: local("Gilroy Light"),
+         url(../fonts/gilroylight.woff2) format("woff2"), 
+         url(../fonts/gilroylight.woff) format("woff"), 
+         url(../fonts/gilroylight.ttf) format("truetype");
+    
+}
+@font-face { 
+    font-family: "Gilroy ExtraBold";
+    src: local("Gilroy ExtraBold"),
+         url(../fonts/gilroyextrabold.woff2) format("woff2"), 
+         url(../fonts/gilroyextrabold.woff) format("woff"), 
+         url(../fonts/gilroyextrabold.ttf) format("truetype");
+    
+}
+@font-face { 
+    font-family: "Open Sans Light";
+    src: local("Open Sans Light"),
+         url(../fonts/opensanslight.woff2) format("woff2"), 
+         url(../fonts/opensanslight.woff) format("woff"), 
+         url(../fonts/opensanslight.ttf) format("truetype");
+    
+}
+@font-face { 
+    font-family: "Open Sans";
+    src: local("Open Sans"),
+         url(../fonts/opensans.woff2) format("woff2"), 
+         url(../fonts/opensans.woff) format("woff"), 
+         url(../fonts/opensans.ttf) format("truetype");
+    
+}
+
+body  {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    /* font-weight: 300; */
+    color: #464646;
+    background-color:#ffffff;
+ 
+    text-align: left;
+  }
+  a{
+      text-decoration: none;
+      color:#000000;
+     
+  }
+
+  .nav-item-bold  {
+font-family: Gilroy ExtraBold;
+font-size:18px;
+list-style-type: none;
+line-height: 24px;
+letter-spacing: 3.6px;
+color:#000000;
+
+
+  }
+  /* пыталась к селектору выше добавить класс .form-item - исчезают все стили */
+ .innerItem{ 
+    list-style-type: none;
+    line-height: 36px;
+letter-spacing: 0.15px;
+    font-size: 15px;
+    font-family: "Open Sans Light", Arial, sans-serif;
+  
+
+  }
+.seach{
+color:rgba(0, 0, 0, 0.3);
+}
+
+.about-contact{
+font-size: 47px;
+line-height: 48px;
+letter-spacing: 0.47px;
+
+}
+.text{
+    letter-spacing: normal;  
+}
+.siteNavigation-user{
+    color:#000000;
+}
+.siteNavigation-user a:hover{
+color:rgba(0,0,0,0.6);
+}
+.siteNavigation-user a:focus{
+    color:rgba(0,0,0,0.3);
+}
+    .siteNavigation-user .seach a:focus{
+        color:#000000;
+        }
+        /* 15.02.2019 - не срабатывает селектор, как сделать чтобы срабатывал*/
+
+        .siteNavigation-bottom a:hover{
+color:rgba(0, 0, 0, 0.6);
+        }d
+
+        .siteNavigation-bottom a:focus{
+            color:rgba(0, 0, 0, 0.3);
+                    }
+
+  .services .nav-item-bold 
+  {
+    font-size: 16px; 
+    line-height:  40px;
+    letter-spacing: normal;
+  }
+  .nav__link2{
+      color:#ffffff;
+  }
+  /* пыталась к селектору выше добавить класс .form-item - исчезают все стили */
+
+  .detail-write{
+      text-align: center;
+      line-height: normal;
+
+  }
+
+  .main-footer{
+      background-color: #464646;
+      color:#ffffff;
+      width: 1440px;
+      height:323px;
+  }
+ 
+.phone 
+ {
+    letter-spacing: none;
+  }
+  .address{
+    letter-spacing: none;
+    }
+    .compare2-basket2{
+line-height: 36px;
+color:rgba(255, 255, 255, 0.7);
+
+    }
+/* пыталась phone добавить к селетору body и объедтнить селекторы adress и phone - не воспринимаются стили в браузере, пришлось отдельно создать селектор. Пыталась к phone добавить address - у adress не появляются стили и исчезают стили и в phone */
+
+
+.login-link2 {
+    color:rgba(255, 255, 255, 0.7);
+    line-height: 36px;
+}
+.footer-social{
+    text-align: center;
+}
+.social-button{
+    color:#ffffff;
+}
+.form-item{
+    font-family: Gilroy ExtraBold;
+    font-size:18px;
+    list-style-type: none;
+    line-height: 24px; 
+    letter-spacing: normal;
+    color:#000000;
+   
+}
+
+.innerForm{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size:14px;
+    list-style-type: none;
+    line-height: 18px; 
+    background-color: #f2f2f2;
+    color:rgba(70, 70, 70, 0.4);
+    border:none;
+   
+}
+.innerForm:hover{
+    background-color: #eaeaea; 
+}
+.innerForm:focus{
+    background-color: #ffffff; 
+    color:#464646;
+    border:3px solid #f0c52e; 
+}
+
+
+.breadcrumbs {
+    list-style-type: none;
+    font-size:14px;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a{
+    list-style-type: none;
+    font-size:14px;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs a:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:focus{
+    color: rgba(0, 0, 0, 0.1);
+}
+
+
+.color-bluetooth{
+    /* font-family: Gilroy ExtraBold;
+font-size:18px;
+list-style-type: none;
+line-height: 24px; */
+letter-spacing: 0.18px;
+}
+.filter-option{
+    list-style-type: none;
+    font-size:14px;
+    line-height: 40px;
+    letter-spacing: 0.14px;
+
+    color: #000000;
+}
+.filters fieldset{
+    border:none;
+}
+.filter-input:disabled + label{
+    color:#a6a6a6;
+}
+
+.main-header{
+    /* background-color:rgba(247,226,150,0.5) */
+    background-color: #f7e296;
+    width: 1160px;
+  /* height: 299px; */
+}
+
+.page-title{
+    /* width: 483px;
+  height: 42px; */
+  font-family: Gilroy ExtraBold;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+
+  color: #000000;
+}
+.catalog-list{
+    list-style: none;
+}
+.catalog-item{
+    letter-spacing: 0.18px;
+    font-size: 18px;
+}
+.catalog-item:hover{
+    opacity: 0.7;
+    background-color: #eeeeee;
+}
+.catalog-item-price{
+    font-family: Gilroy Light;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+
+}
+.pagination-list{
+    list-style: none;
+}
+.pagination-item a{
+    font-family: Gilroy ExtraBold;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    color:rgba(0,0,0,0.3);
+}
+.pagination-item a:hover{
+    color:rgba(0, 0, 0, 0.6);
+}
+.pagination-item a:focus,
+.pagination-item a:active{
+    color:#000000;
+}
+.pagination-item-current a{
+    color:#000000;
+}
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active{
+    color:#000000;
+}
+.pagination-item-forward a{
+color:#000000;
+line-height:24px; 
+}
+.pagination-item-forward a:hover{
+    color:#000000;
+}
+.pagination-item-forward a:focus{
+   color:rgba(0,0,0,0.3) 
+}
+
+.pagination-item-back a{
+    color:#000000;
+    line-height: 24px;
+}
+.pagination-item-back a:hover{
+    color:#000000;
+}
+.pagination-item-back a:focus{
+    color:rgba(0,0,0,0.3);
+}
+.siteNavigation-user-footer a:hover{
+  color:#ffffff;
+}
+.siteNavigation-user-footer a:focus{
+    color:rgba(255, 255, 255, 0.3);
+  }
+  .siteNavigation-bottom-footer a:hover{
+color:rgba(255, 255, 255, 0.6);
+  }
+  .siteNavigation-bottom-footer a:focus{
+    color:rgba(255, 255, 255, 0.3);
+      }
+      .button{
+          border:none;
+      }
+
+
+
+  /* body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */
+  

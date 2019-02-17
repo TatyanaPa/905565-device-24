@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
   <meta charset="utf-8">
   <title>indexHTML Academy: Девайс</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&;subset=cyrillic" rel="stylesheet"> -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="main-header">
-    <a class="mainLogo">
-      <img src="img/image_index/logo_divice.svg" width="100" height="50" alt="Логотип DIVICE">
+    <a class="mainLogo" href="main.html" aria-label="Логотип DIVICE">
+      <img src="img/image_index/logo_divice.svg" width="163" height="35" alt="Логотип DIVICE">
     </a>
+    <!-- надо-ли этот логотип оборачивать в ссылку?  -->
+
     <nav class="main-navigation">
-      <div class="site-navigation site-navigation-user">
-        <a class="seach" href="seach.html">Поиск по сайту</a>
-        <a class="login-link" href="login.html">Войти</a>
-        <a href="compare.html">Сравнить</a>
-        <a href="basket.html">Корзина</a>
+      <div class="siteNavigation siteNavigation-user">
+        <a class=" seach" href="seach.html">Поиск по сайту</a>
+        <a class="siteNavigation-user login-link1" href="login.html">Войти</a>
+        <a class="siteNavigation-user compare1-basket1" href=" compare.html">Сравнить</a>
+        <a class="siteNavigation-user compare1-basket1" href=" basket.html">Корзина</a>
       </div>
-      <ul class="site-navigation site-navigation-bottom">
-        <li><a href="catalog.html">Каталог товаров</a>
+
+      <ul class="siteNavigation siteNavigation-bottom">
+        <li class="nav-item-bold"><a href="catalog.html">Каталог товаров</a>
           <ul class="dropMenue">
-         
-              <li><a href="virtualReality.html">Виртуальная реальность</a></li>
-         <a href="monopods.html">Моноподы для селфи</a>
-            <li> <a href="actionCameras.html">Экшн-камеры</a></li>
-             <li><a href="fitnessBraselet.html">Фитнес-браслеты</a></li>
-             <li><a href="smartWatch.html">Умные часы</a></li>
-            <li> <a href="quadcopters.html">Квадрокоптеры</a></li>
-             </ul>
+
+            <li class="innerItem"><a href="virtualReality.html">Виртуальная реальность</a></li>
+            <li class="innerItem"><a href="monopods.html">Моноподы для селфи</a></li>
+            <li class="innerItem"> <a href="actionCameras.html">Экшн-камеры</a></li>
+            <li class="innerItem"><a href="fitnessBraselet.html">Фитнес-браслеты</a></li>
+            <li class="innerItem"><a href="smartWatch.html">Умные часы</a></li>
+            <li class="innerItem"> <a href="quadcopters.html">Квадрокоптеры</a></li>
+          </ul>
+
+      
         </li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="assurance.html">Гарантия</a></li>
-        <li><a href="contact.html">Контакты</a></li>
+
+       
+
+        <li class="nav-item-bold"><a href="delivery.html">Доставка</a></li>
+        <li class="nav-item-bold"><a href="assurance.html">Гарантия</a></li>
+        <li class="nav-item-bold"><a href="contact.html">Контакты</a></li>
+
+      
       </ul>
     </nav>
   </header>
+
   <main class="container">
     <h1 class="visually-hidden">DIVICE</h1>
 
     <section class="aboutus">
       <hr>
-      <!--Либо вместо hr указать псевдоэлемен before к h2  -->
-      <h2 class="about-contact">О нас</h2>
+      <!-- вместо hr  потом сделаем псевдоэлемнтом  -->
+      <h2 class="nav-item-bold about-contact">О нас</h2>
 
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+      <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
 
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими транспортными
+      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими транспортными
         компаниями:</p>
-      <ul>
-        <li><a href="info.html">Деловые линии</a></li>
-        <li><a href="info.html">Автотрейдинг</a></li>
-        <li><a href="info.html">ЖелДорЭкспедиция</a></li>
+      <ul class="services">
+        <li class="nav-item-bold"><a href="info.html">Деловые линии</a></li>
+        <li class="nav-item-bold"><a href="info.html">Автотрейдинг</a></li>
+        <li class="nav-item-bold"><a href="info.html">ЖелДорЭкспедиция</a></li>
       </ul>
 
-      <a class="moreread-righttous" href="info.html">Подробнее о нас</a>
+      <a class="detail-write nav-item-bold" href="info.html">Подробнее о нас</a>
 
     </section>
 
@@ -63,17 +78,17 @@
 
       <hr>
       <!-- Либо вместо hr указать псевдоэлемен before к h2 -->
-      <h2 class="about-contact">Контакты</h2>
-      <!--Здесь намеренно оставила класс aboutus, так как одинаковый по стилю -->
+      <h2 class="nav-item-bold about-contact">Контакты</h2>
+     
 
-      <p>Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки.
+      <p class="text">Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки.
         Всякое бывает.</p>
 
       <a class="map">
-        <img class="map" src="img/image_index/map-png.png" width="368" height="153" alt="Карта расположения офиса">
+        <img class="map" src="img/image_index/map-png.png" width="560" height="222" alt="Карта расположения офиса">
       </a>
 
-      <a class="moreread-righttous" href="info.html">Напишите нам</a>
+      <a class="detail-write nav-item-bold" href="info.html">Напишите нам</a>
 
     </section>
   </main>
@@ -82,91 +97,94 @@
   <footer class="main-footer">
 
     <div footer-adress>
-      <img src="img/image_index/logo_divice.svg" width="100" height="50" alt="Логотип DIVICE">
-      <address>г. Москва, ул. Строителей, 15</address>
+      <a class="mainLogoFooter" href="main.html" aria-label="Логотип DIVICE">
+      <img src="img/image_index/logo_divice_yellow_svg.svg" width="163" height="35" alt="Логотип DIVICE">
+      </a>
+      <div class="address">г. Москва, ул. Строителей, 15</div>
       <div></div>
       <!--желтая полосочка-->
     </div>
 
     <nav class="main-navigation">
-      <ul class="site-navigation site-navigation-user">
-        <li><a href="input.html">Войти</a></li>
-        <li><a href="compare.html">Сравнить</a></li>
-        <li><a href="basket.html">Корзина</a></li>
-      </ul>
-
-      <a class="social-button" href="#" areal-lebal="Ссылка на соц. сеть Фэйсбук">Ф</a>
-      <a class="social-button" areal-lebal="Ссылка на соц. сеть Инстаграм" href="#">И</a>
-      <a class="social-button" areal-lebal="ССылка на соц. сеть Твитер" href="#">Т</a>
-
+      <div class="siteNavigation siteNavigation-user-footer">
+     
+        <a class="login-link2" href="login.html">Войти</a>
+        <a class="siteNavigation-user compare2-basket2" href="compare.html">Сравнить</a>
+        <a class="siteNavigation-user compare2-basket2" href="basket.html">Корзина</a>
+      </div>
+<div class="footer-social">
+      <a class="social-button" href="#" aria-label="Ссылка на социальную сеть Фэйсбук">Фэйсбук</a>
+      <a class="social-button" aria-label="Ссылка на социальную сеть Инстаграм" href="#">Инстаграмм</a>
+      <a class="social-button" aria-label="ССылка на социальную сеть Твитер" href="#">Твиттер</a>
+</div>
     </nav>
 
     <nav>
-      <ul class="site-navigation site-navigation-bottom">
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="assurance.html">Гарантия</a></li>
-        <li><a href="contact.html">Контакты</a></li>
+      <ul class="siteNavigation siteNavigation-bottom-footer">
+        <li class="nav-item-bold nav--item2"><a class="nav__link2" href="delivery.html">Доставка</a></li>
+        <li class="nav-item-bold nav--item2"><a class="nav__link2" href="assurance.html">Гарантия</a></li>
+        <li class="nav-item-bold nav--item2"><a class="nav__link2" href="contact.html">Контакты</a></li>
       </ul>
 
       <span class="phone">Тел.+7(495)495-95-95</span>
 
-      <a class="akadem-logo" href="https://htmlacademy.ru">
-        <img src="img/image_index/logo-html.svg" width="20" height="20" alt="Логотип Академии">
+      <a class="akadem-logo" href="https://htmlacademy.ru" aria-label="Логотип Академии">
+        <img src="img/image_index/logo-html.svg" width="27" height="35" alt="Логотип Академии">
       </a>
     </nav>
 
   </footer>
   <section class="modal modalLogin">
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
+    <p class="form-item">Введите свой логин и пароль.</p>
     <form class="loginForm" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label class="visually-hidden" for="user-login">Логин</label>
-        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+      <p class="form-item">
+        <label class="visually-hidden " for="user-login">Логин</label>
+        <input class="login-icon-user innerForm" id="user-login" type="text" name="login" placeholder="Логин">
       </p>
-      <p>
+      <p class="form-item">
         <label class="visually-hidden" for="user-password">Пароль</label>
-        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        <input class="login-icon-password innerForm" id="user-password" type="password" name="password" placeholder="Пароль">
       </p>
-      <p class="login-password-info">
+      <p class="form-item">
         <label class="login-checkbox">
           <input type="checkbox" name="remember">
           Запомните меня
         </label>
         <a class="restore" href="#">Я забыл пароль!</a>
       </p>
-      <button class="button" type="submit">
+      <button class="button nav-item-bold" type="submit">
         Войти
       </button>
     </form>
-    <button class="modalClose" type="button">
+    <button class="modalClose nav-item-bold" type="button">
       Закрыть
     </button>
   </section>
 
   <section class="modal modalMail">
-      <h2 class="hMailHidden">Напишите нам</h2>
-      <!--или здесь можно h1?-->
+    <h2 class="hMailHidden">Напишите нам</h2>
+    
 
-      <img src="img/image_index/modal-close.svg" width="30" height="30" alt="Закрыть" aria-label="Закрыть">
+    <img src="img/image_index/modal-close.svg" width="55" height="55" alt="Закрыть" aria-label="Закрыть">
 
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p class="name-email-righttous"><label>Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия" required>
-          </label>
-        </p>
-        <p class="name-email-righttous"><label>Ваш e-mail:
-            <input type="email" name="email" placeholder="e-mail@example.com" required>
-          </label>
-        </p>
-        <p class="name-email-righttous">
-          <label for="field-letter">Текст письма: </label><br>
-          <input type="text" name="mail" placeholder="В свободной форме" id="field-letter">
-   <br>
-        <p><button class="moreread-righttous" type="submit">Отправить</button>
-       
-      </form>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-item"><label>Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия" class="innerForm" required>
+        </label>
+      </p>
+      <p class="form-item"><label>Ваш e-mail:
+          <input type="email" name="email" placeholder="e-mail@example.com" class="innerForm" required>
+        </label>
+      </p>
+      <p class="form-item">
+        <label for="field-letter">Текст письма: </label><br>
+        <!-- <input type="text" name="mail" --><textarea placeholder="В свободной форме" class="innerForm" id="field-letter"></textarea>
+
+        <button class="detail-write nav-item-bold" type="submit">Отправить</button>
+
+    </form>
 
   </section>
 </body>
