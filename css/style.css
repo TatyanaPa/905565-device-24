@@ -34,23 +34,48 @@
 }
 
 body  {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.15px;
-    /* font-weight: 300; */
+    width:1440px;
+    height:2015px;
+  
     color: #464646;
     background-color:#ffffff;
+    
  
-    text-align: left;
   }
   a{
       text-decoration: none;
       color:#000000;
      
   }
+  .main-header{
+    /* background-color:rgba(247,226,150,0.5) */
+    
+    margin:0 auto;
+    margin-top:30px;
+    direction:row;
+    background-color: #f7e296;
+    width: 1160px;
+  /* height: 299px; */
+}
+
+.wrapper-mainlogo{
+    display: block;
+   position: relative;
+    box-sizing: border-box;
+   
+}
+.mainlogo{
+    position:absolute;
+    left:60px;
+    top:-17px;
+   
+}
 
   .nav-item-bold  {
 font-family: Gilroy ExtraBold;
@@ -62,20 +87,78 @@ color:#000000;
 
 
   }
-  /* пыталась к селектору выше добавить класс .form-item - исчезают все стили */
- .innerItem{ 
+  .siteNavigation{
+    display:flex;
+    flex-direction: row;
+    margin:0;
+    padding-top:50px;
+    padding-bottom:0px;
+    min-height:20px;
+}
+.seach{
+    color:rgba(0, 0, 0, 0.3);
+    width:160px;
+    }
+    .login-link1{
+    width:80px;
+    }
+    .compare1-basket1{
+    width:100px;
+    }
+    .siteNavigation-user{
+        color:#000000;
+    
+    }
+    .siteNavigation-user a:hover{
+    color:rgba(0,0,0,0.6);
+    }
+    .siteNavigation-user a:focus{
+        color:rgba(0,0,0,0.3);
+    }
+        .siteNavigation-user .seach:focus{
+            color:#000000;
+            }
+            /* 15.02.2019 - не срабатывает селектор, как сделать чтобы срабатывал*/
+    
+            .siteNavigation-bottom a:hover{
+    color:rgba(0, 0, 0, 0.6);
+            }
+    
+            .siteNavigation-bottom a:focus{
+                color:rgba(0, 0, 0, 0.3);
+                        }
+
+
+.dropMenue {
+    display:flex;
+    flex-direction:row;
+    width:615px;
+    justify-content: space-between;
+    margin:0;
+    padding-top: 20px;
+   
+}
+ .innerItem { 
     list-style-type: none;
     line-height: 36px;
 letter-spacing: 0.15px;
     font-size: 15px;
     font-family: "Open Sans Light", Arial, sans-serif;
-  
+  width:200px;
 
   }
-.seach{
-color:rgba(0, 0, 0, 0.3);
+.wpapper_dropMenue_one{
+    /* display:flex; */
+    width:181px;
 }
-
+.wpapper_dropMenue_two{
+    /* display:flex; */
+    width:124px;
+}
+.wpapper_dropMenue_three{
+    /* display:flex; */
+    width:111px;
+}
 .about-contact{
 font-size: 47px;
 line-height: 48px;
@@ -85,27 +168,7 @@ letter-spacing: 0.47px;
 .text{
     letter-spacing: normal;  
 }
-.siteNavigation-user{
-    color:#000000;
-}
-.siteNavigation-user a:hover{
-color:rgba(0,0,0,0.6);
-}
-.siteNavigation-user a:focus{
-    color:rgba(0,0,0,0.3);
-}
-    .siteNavigation-user .seach a:focus{
-        color:#000000;
-        }
-        /* 15.02.2019 - не срабатывает селектор, как сделать чтобы срабатывал*/
 
-        .siteNavigation-bottom a:hover{
-color:rgba(0, 0, 0, 0.6);
-        }d
-
-        .siteNavigation-bottom a:focus{
-            color:rgba(0, 0, 0, 0.3);
-                    }
 
   .services .nav-item-bold 
   {
@@ -113,10 +176,10 @@ color:rgba(0, 0, 0, 0.6);
     line-height:  40px;
     letter-spacing: normal;
   }
-  .nav__link2{
+  .footer-service-link{
       color:#ffffff;
   }
-  /* пыталась к селектору выше добавить класс .form-item - исчезают все стили */
+
 
   .detail-write{
       text-align: center;
@@ -125,11 +188,14 @@ color:rgba(0, 0, 0, 0.6);
   }
 
   .main-footer{
+     
+  
       background-color: #464646;
       color:#ffffff;
-      width: 1440px;
-      height:323px;
+      /* width: 100%;
+      height:320px; */
   }
+ 
  
 .phone 
  {
@@ -187,6 +253,15 @@ color:rgba(255, 255, 255, 0.7);
 
 
 .breadcrumbs {
+    margin:0 auto;
+    display:flex;
+  
+    width:1040px;
+    height:14px;
+    padding: 0;
+    padding-top: 29px;
+    padding-bottom: 49px;
+    /* padding-left: 60px; */
     list-style-type: none;
     font-size:14px;
     line-height: 24px;
@@ -210,7 +285,17 @@ color:rgba(255, 255, 255, 0.7);
 .breadcrumbs a:focus{
     color: rgba(0, 0, 0, 0.1);
 }
-
+.sorting{
+    display:flex;
+    margin:0;
+  width:100%;
+  height:71px;
+  background-color: #ebebeb;
+}
+.catalog-columns{
+    display:flex;
+    justify-content: flex-start;
+}
 
 .color-bluetooth{
     /* font-family: Gilroy ExtraBold;
@@ -218,6 +303,11 @@ font-size:18px;
 list-style-type: none;
 line-height: 24px; */
 letter-spacing: 0.18px;
+}
+.filters{
+    width:468px;
+    height:1287px;
+    background-color: #efefef;
 }
 .filter-option{
     list-style-type: none;
@@ -234,16 +324,15 @@ letter-spacing: 0.18px;
     color:#a6a6a6;
 }
 
-.main-header{
-    /* background-color:rgba(247,226,150,0.5) */
-    background-color: #f7e296;
-    width: 1160px;
-  /* height: 299px; */
-}
+
 
 .page-title{
-    /* width: 483px;
-  height: 42px; */
+ display:box;
+box-sizing: border-box;
+ margin:0 auto;
+ padding-left:60px;
+ margin-top: 44px;
+
   font-family: Gilroy ExtraBold;
   font-size: 47px;
   font-weight: 800;
@@ -251,19 +340,46 @@ letter-spacing: 0.18px;
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0.47px;
-
   color: #000000;
+  width:1160px;
+  height:42px;
+}
+.catalog{
+   
+    width:760px;
+    height:1170px;
+    padding-left: 70px;
+    
+
+
 }
 .catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
     list-style: none;
+
 }
 .catalog-item{
+    flex-wrap: nowrap;
     letter-spacing: 0.18px;
     font-size: 18px;
+    margin-bottom: 40px;
+    margin-right:40px;
+    width:360px;
+   
+    
 }
-.catalog-item:hover{
+.catalog-item:nth-child(2n){
+    margin-right:0;
+}
+.catalog-list a{
+    display:inline-block;
+}
+.catalog-item:hover img{
     opacity: 0.7;
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
 }
 .catalog-item-price{
     font-family: Gilroy Light;
@@ -272,7 +388,17 @@ letter-spacing: 0.18px;
 
 }
 .pagination-list{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-left:30px;
+    padding-right: 30px;
     list-style: none;
+    height:70px;
+    width:699px;
+    background-color: #ebebeb;
 }
 .pagination-item a{
     font-family: Gilroy ExtraBold;
@@ -296,6 +422,10 @@ letter-spacing: 0.18px;
 .pagination-item-current a:active{
     color:#000000;
 }
+.pagination-item-forward{
+  
+   
+}
 .pagination-item-forward a{
 color:#000000;
 line-height:24px; 
@@ -306,7 +436,15 @@ line-height:24px;
 .pagination-item-forward a:focus{
    color:rgba(0,0,0,0.3) 
 }
-
+.pagination-item-center{
+display: flex;
+justify-content: space-between;
+width: 90px;
+   
+}
+.pagination-item-back{
+   
+}
 .pagination-item-back a{
     color:#000000;
     line-height: 24px;
@@ -333,6 +471,67 @@ color:rgba(255, 255, 255, 0.6);
           border:none;
       }
 
+      .wrapper-aboutus-contacts{
+        display:flex;
+          width:1160px;
+          margin:0 auto;
+          margin-bottom: 90px;
+      }
+
+.aboutus{
+  direction:column;
+    width:480px;
+    margin-right: 120px;
+}
+.contacts{
+    direction:column;
+  
+    width:560px; 
+}
+.wrapper-footer{
+    display:flex;
+    /* margin-top:65px; */
+    /* padding:60px 0; */
+    /* flex-direction:row;  */
+  justify-content: center;
+  margin:0 auto;
+
+  padding:65px 0 70px 0;
+  /* list-style: none; */
+  width:1160px;
+  }
+
+  .wrapper-footer-address{
+    display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content:space-between;
+width:360px;
+margin:0;
+/* margin-right:100px; */
+
+/* min-height:200px; */
+  }
+  .wrapper-footer-social{
+    display:flex;
+      flex-direction: column;
+      width:440px;
+      /* min-height:200px; */
+      text-align: center;
+      justify-content:space-between;
+
+  }
+  .wrapper-footer-phone{
+    display:flex;
+       flex-direction: column;
+     /* align-self: flex-start; */
+   text-align: right;
+    width:360px;
+margin:0;
+/* margin-left:auto; */
+    /* min-height:200px; */
+justify-content:space-between;
+  }
 
 
   /* body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */

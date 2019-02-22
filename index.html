@@ -13,14 +13,16 @@
 <body>
 
   <header class="main-header">
-    <a class="mainLogo" href="main.html" aria-label="Логотип DIVICE">
+    <div class="wrapper-mainlogo">
+    <a class="mainlogo" aria-label="Логотип DIVICE">
       <img src="img/image_index/logo_divice.svg" width="163" height="35" alt="Логотип DIVICE">
     </a>
-    <!-- надо-ли этот логотип оборачивать в ссылку?  -->
+    </div>
+   
 
     <nav class="main-navigation">
       <div class="siteNavigation siteNavigation-user">
-        <a class=" seach" href="seach.html">Поиск по сайту</a>
+        <a class="seach" href="seach.html">Поиск по сайту</a>
         <a class="siteNavigation-user login-link1" href="login.html">Войти</a>
         <a class="siteNavigation-user compare1-basket1" href=" compare.html">Сравнить</a>
         <a class="siteNavigation-user compare1-basket1" href=" basket.html">Корзина</a>
@@ -29,25 +31,23 @@
       <ul class="siteNavigation siteNavigation-bottom">
         <li class="nav-item-bold"><a href="catalog.html">Каталог товаров</a>
           <ul class="dropMenue">
-
+<div class="wpapper_dropMenue_one">
             <li class="innerItem"><a href="virtualReality.html">Виртуальная реальность</a></li>
             <li class="innerItem"><a href="monopods.html">Моноподы для селфи</a></li>
             <li class="innerItem"> <a href="actionCameras.html">Экшн-камеры</a></li>
+            </div>
+            <div class="wpapper_dropMenue_two">
             <li class="innerItem"><a href="fitnessBraselet.html">Фитнес-браслеты</a></li>
             <li class="innerItem"><a href="smartWatch.html">Умные часы</a></li>
+            </div>
+            <div class="wpapper_dropMenue_three">
             <li class="innerItem"> <a href="quadcopters.html">Квадрокоптеры</a></li>
+            </div>
           </ul>
-
-      
         </li>
-
-       
-
         <li class="nav-item-bold"><a href="delivery.html">Доставка</a></li>
         <li class="nav-item-bold"><a href="assurance.html">Гарантия</a></li>
         <li class="nav-item-bold"><a href="contact.html">Контакты</a></li>
-
-      
       </ul>
     </nav>
   </header>
@@ -55,6 +55,7 @@
   <main class="container">
     <h1 class="visually-hidden">DIVICE</h1>
 
+    <div class="wrapper wrapper-aboutus-contacts">
     <section class="aboutus">
       <hr>
       <!-- вместо hr  потом сделаем псевдоэлемнтом  -->
@@ -62,7 +63,8 @@
 
       <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
 
-      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими транспортными
+      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими
+        транспортными
         компаниями:</p>
       <ul class="services">
         <li class="nav-item-bold"><a href="info.html">Деловые линии</a></li>
@@ -79,9 +81,10 @@
       <hr>
       <!-- Либо вместо hr указать псевдоэлемен before к h2 -->
       <h2 class="nav-item-bold about-contact">Контакты</h2>
-     
 
-      <p class="text">Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки.
+
+      <p class="text">Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность
+        покупки.
         Всякое бывает.</p>
 
       <a class="map">
@@ -89,50 +92,52 @@
       </a>
 
       <a class="detail-write nav-item-bold" href="info.html">Напишите нам</a>
-
+   
     </section>
+  </div>
   </main>
 
 
   <footer class="main-footer">
+<div class="wrapper wrapper-footer">
 
-    <div footer-adress>
+    <div class="wrapper-footer-address">
       <a class="mainLogoFooter" href="main.html" aria-label="Логотип DIVICE">
-      <img src="img/image_index/logo_divice_yellow_svg.svg" width="163" height="35" alt="Логотип DIVICE">
+        <img src="img/image_index/logo_divice_yellow_svg.svg" width="163" height="35" alt="Логотип DIVICE">
       </a>
       <div class="address">г. Москва, ул. Строителей, 15</div>
-      <div></div>
+      <div>________</div>
       <!--желтая полосочка-->
     </div>
-
-    <nav class="main-navigation">
+    
+<div class="wrapper wrapper-footer-social">
+    <ul class="siteNavigation siteNavigation-bottom-footer">
+        <li class="nav-item-bold nav--item2"><a class="footer-service-link" href="delivery.html">Доставка</a></li>
+        <li class="nav-item-bold nav--item2"><a class="footer-service-link" href="assurance.html">Гарантия</a></li>
+        <li class="nav-item-bold nav--item2"><a class="footer-service-link" href="contact.html">Контакты</a></li>
+      </ul>
+      <div class="footer-social">
+          <a class="social-button" href="#" aria-label="Ссылка на социальную сеть Фэйсбук">Фэйсбук</a>
+          <a class="social-button" aria-label="Ссылка на социальную сеть Инстаграм" href="#">Инстаграмм</a>
+          <a class="social-button" aria-label="ССылка на социальную сеть Твитер" href="#">Твиттер</a>
+        </div>
+</div>
+    <!-- <nav class="main-navigation"> -->
+      <div class="wrapper wrapper-footer-phone">
       <div class="siteNavigation siteNavigation-user-footer">
-     
+
         <a class="login-link2" href="login.html">Войти</a>
         <a class="siteNavigation-user compare2-basket2" href="compare.html">Сравнить</a>
         <a class="siteNavigation-user compare2-basket2" href="basket.html">Корзина</a>
       </div>
-<div class="footer-social">
-      <a class="social-button" href="#" aria-label="Ссылка на социальную сеть Фэйсбук">Фэйсбук</a>
-      <a class="social-button" aria-label="Ссылка на социальную сеть Инстаграм" href="#">Инстаграмм</a>
-      <a class="social-button" aria-label="ССылка на социальную сеть Твитер" href="#">Твиттер</a>
-</div>
-    </nav>
-
-    <nav>
-      <ul class="siteNavigation siteNavigation-bottom-footer">
-        <li class="nav-item-bold nav--item2"><a class="nav__link2" href="delivery.html">Доставка</a></li>
-        <li class="nav-item-bold nav--item2"><a class="nav__link2" href="assurance.html">Гарантия</a></li>
-        <li class="nav-item-bold nav--item2"><a class="nav__link2" href="contact.html">Контакты</a></li>
-      </ul>
 
       <span class="phone">Тел.+7(495)495-95-95</span>
 
       <a class="akadem-logo" href="https://htmlacademy.ru" aria-label="Логотип Академии">
         <img src="img/image_index/logo-html.svg" width="27" height="35" alt="Логотип Академии">
       </a>
-    </nav>
-
+    <!-- </nav> -->
+</div>
   </footer>
   <section class="modal modalLogin">
     <h2>Личный кабинет</h2>
@@ -164,7 +169,7 @@
 
   <section class="modal modalMail">
     <h2 class="hMailHidden">Напишите нам</h2>
-    
+
 
     <img src="img/image_index/modal-close.svg" width="55" height="55" alt="Закрыть" aria-label="Закрыть">
 
