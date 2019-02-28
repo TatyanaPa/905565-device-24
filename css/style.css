@@ -1,339 +1,475 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: local("Gilroy Light"),
+    url(../fonts/gilroylight.woff2) format("woff2"),
+    url(../fonts/gilroylight.woff) format("woff"),
+    url(../fonts/gilroylight.ttf) format("truetype");
 
-
-@font-face { 
-    font-family: "Gilroy Light";
-    src: local("Gilroy Light"),
-         url(../fonts/gilroylight.woff2) format("woff2"), 
-         url(../fonts/gilroylight.woff) format("woff"), 
-         url(../fonts/gilroylight.ttf) format("truetype");
-    
-}
-@font-face { 
-    font-family: "Gilroy ExtraBold";
-    src: local("Gilroy ExtraBold"),
-         url(../fonts/gilroyextrabold.woff2) format("woff2"), 
-         url(../fonts/gilroyextrabold.woff) format("woff"), 
-         url(../fonts/gilroyextrabold.ttf) format("truetype");
-    
-}
-@font-face { 
-    font-family: "Open Sans Light";
-    src: local("Open Sans Light"),
-         url(../fonts/opensanslight.woff2) format("woff2"), 
-         url(../fonts/opensanslight.woff) format("woff"), 
-         url(../fonts/opensanslight.ttf) format("truetype");
-    
-}
-@font-face { 
-    font-family: "Open Sans";
-    src: local("Open Sans"),
-         url(../fonts/opensans.woff2) format("woff2"), 
-         url(../fonts/opensans.woff) format("woff"), 
-         url(../fonts/opensans.ttf) format("truetype");
-    
 }
 
-body  {
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Open Sans Light", Arial, sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-    letter-spacing: 0.15px;
-    width:1440px;
-    height:2015px;
-  
-    color: #464646;
-    background-color:#ffffff;
-    
- 
-  }
-  a{
-      text-decoration: none;
-      color:#000000;
-     
-  }
-  .main-header{
-    /* background-color:rgba(247,226,150,0.5) */
-    
-    margin:0 auto;
-    margin-top:30px;
-    direction:row;
-    background-color: #f7e296;
-    width: 1160px;
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: local("Gilroy ExtraBold"),
+    url(../fonts/gilroyextrabold.woff2) format("woff2"),
+    url(../fonts/gilroyextrabold.woff) format("woff"),
+    url(../fonts/gilroyextrabold.ttf) format("truetype");
+
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: local("Open Sans Light"),
+    url(../fonts/opensanslight.woff2) format("woff2"),
+    url(../fonts/opensanslight.woff) format("woff"),
+    url(../fonts/opensanslight.ttf) format("truetype");
+
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url(../fonts/opensans.woff2) format("woff2"),
+    url(../fonts/opensans.woff) format("woff"),
+    url(../fonts/opensans.ttf) format("truetype");
+
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+ /* letter-spacing: 0.15px; */
+
+  color: #464646;
+  background-color: #ffffff;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+
+  width: 1px;
+  height: 1px;
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.main-header {
+  /* background-color:rgba(247,226,150,0.5) */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: #f7e296;
+  width: 1160px;
+  padding: 0 60px 165px;
+  box-sizing: border-box;
   /* height: 299px; */
 }
 
-.wrapper-mainlogo{
-    display: block;
-   position: relative;
-    box-sizing: border-box;
-   
+
+.main-logo {
+  position: absolute;
+  left: 60px;
+  top: -17px;
 }
-.mainlogo{
-    position:absolute;
-    left:60px;
-    top:-17px;
-   
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  padding-left: 0;
+  min-height: 20px;
+}
+.site-navigation-user {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #000000;
+  padding-left: 25px;
+}
+.site-navigation-user a:hover {
+  opacity: .6;
 }
 
-  .nav-item-bold  {
-font-family: Gilroy ExtraBold;
-font-size:18px;
-list-style-type: none;
-line-height: 24px;
-letter-spacing: 3.6px;
-color:#000000;
-
-
-  }
-  .siteNavigation{
-    display:flex;
-    flex-direction: row;
-    margin:0;
-    padding-top:50px;
-    padding-bottom:0px;
-    min-height:20px;
+.site-navigation-user a:focus {
+  opacity: .3;
 }
-.seach{
-    color:rgba(0, 0, 0, 0.3);
-    width:160px;
-    }
-    .login-link1{
-    width:80px;
-    }
-    .compare1-basket1{
-    width:100px;
-    }
-    .siteNavigation-user{
-        color:#000000;
-    
-    }
-    .siteNavigation-user a:hover{
-    color:rgba(0,0,0,0.6);
-    }
-    .siteNavigation-user a:focus{
-        color:rgba(0,0,0,0.3);
-    }
-        .siteNavigation-user .seach:focus{
-            color:#000000;
-            }
-            /* 15.02.2019 - не срабатывает селектор, как сделать чтобы срабатывал*/
-    
-            .siteNavigation-bottom a:hover{
-    color:rgba(0, 0, 0, 0.6);
-            }
-    
-            .siteNavigation-bottom a:focus{
-                color:rgba(0, 0, 0, 0.3);
-                        }
 
+.site-navigation-user a:active {
+  /*при нажатии*/
+}
 
-.dropMenue {
-    display:flex;
-    flex-direction:row;
-    width:615px;
-    justify-content: space-between;
-    margin:0;
-    padding-top: 20px;
-   
+.site-navigation-user .search {
+  background: transparent;
+  border: none;
 }
- .innerItem { 
-    list-style-type: none;
-    line-height: 36px;
-letter-spacing: 0.15px;
-    font-size: 15px;
-    font-family: "Open Sans Light", Arial, sans-serif;
-  width:200px;
 
-  }
-.wpapper_dropMenue_one{
-    /* display:flex; */
-    width:181px;
+.site-navigation-user .search:focus {
+  color: #000000;
 }
-.wpapper_dropMenue_two{
-    /* display:flex; */
-    width:124px;
+.search:hover{
+opacity:0.6;
 }
-.wpapper_dropMenue_three{
-    /* display:flex; */
-    width:111px;
-}
-.about-contact{
-font-size: 47px;
-line-height: 48px;
-letter-spacing: 0.47px;
-
-}
-.text{
-    letter-spacing: normal;  
+.search-link-icon{
+  position: absolute;
+  top: 55px;
+  left: 0;
 }
 
 
-  .services .nav-item-bold 
-  {
-    font-size: 16px; 
-    line-height:  40px;
-    letter-spacing: normal;
-  }
-  .footer-service-link{
-      color:#ffffff;
-  }
+.button {
+  border: none;
+}
+
+.login-link-header {
+  width: 80px;
+}
+.login-link-icon {
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.compare-basket-header {
+  width: 100px;
+}
+
+.site-navigation-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-navigation-bottom a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-navigation-bottom a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+.nav-item-bold {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.nav-item-bold:first-child {
+  margin-right: 200px;
+}
+
+.nav-item-bold:last-child {
+  margin-left: 40px;
+}
+
+/* главная выпадающее меню */
+.drop-menue {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-bottom: 30px;
+  list-style-type: none;
+  background-color: #f7e296;
+}
+
+.drop-menue-inner {
+  width: 220px;
+  margin-right: 20px;
+}
+.drop-user-navigation {
+  padding-left: 0;
+}
+
+.drop-inner-item {
+  list-style-type: none;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  font-size: 15px;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  text-transform: none;
+}
+
+/* главная Сервис */
+
+/* главная Партнеры */
+
+/* главная О нас и Контакты */
+.wrapper-about-us-contacts {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.about-us {
+  direction: column;
+  width: 480px;
+  margin-right: 120px;
+}
+
+.about-us-contacts {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  list-style-type: none;
+  color: #000000;
+  /* text-transform: uppercase; */
+}
+
+.text {
+  letter-spacing: normal;
+}
+.contacts {
+  direction: column;
+
+  width: 560px;
+}
+
+.partners-item{
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: normal;
+  color: #000000;
+}
 
 
-  .detail-write{
-      text-align: center;
-      line-height: normal;
-
-  }
-
-  .main-footer{
-     
-  
-      background-color: #464646;
-      color:#ffffff;
-      /* width: 100%;
+.detail-write-send {
+  text-align: center;
+  line-height: 24px;
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  list-style-type: none;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+}
+/* главная футер */
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+  /* width: 100%;
       height:320px; */
+}
+
+.wrapper-footer {
+  display: flex;
+  /* margin-top:65px; */
+  /* padding:60px 0; */
+  /* flex-direction:row;  */
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 65px 0 70px 0;
+  /* list-style: none; */
+  width: 1160px;
+}
+
+.wrapper-footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 360px;
+  margin: 0;
+  /* margin-right:100px; */
+
+  /* min-height:200px; */
+}
+.main-logo-footer:hover{
+opacity:0.6;
+}
+.main-logo-footer:focus{
+  opacity:0.3;
   }
- 
- 
-.phone 
- {
-    letter-spacing: none;
-  }
-  .address{
-    letter-spacing: none;
+  .main-logo-footer:active{
+    opacity:0.3;
     }
-    .compare2-basket2{
-line-height: 36px;
-color:rgba(255, 255, 255, 0.7);
+.wrapper-footer-social {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  /* min-height:200px; */
+  text-align: center;
+  justify-content: space-between;
 
-    }
-/* пыталась phone добавить к селетору body и объедтнить селекторы adress и phone - не воспринимаются стили в браузере, пришлось отдельно создать селектор. Пыталась к phone добавить address - у adress не появляются стили и исчезают стили и в phone */
-
-
-.login-link2 {
-    color:rgba(255, 255, 255, 0.7);
-    line-height: 36px;
-}
-.footer-social{
-    text-align: center;
-}
-.social-button{
-    color:#ffffff;
-}
-.form-item{
-    font-family: Gilroy ExtraBold;
-    font-size:18px;
-    list-style-type: none;
-    line-height: 24px; 
-    letter-spacing: normal;
-    color:#000000;
-   
 }
 
-.innerForm{
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size:14px;
-    list-style-type: none;
-    line-height: 18px; 
-    background-color: #f2f2f2;
-    color:rgba(70, 70, 70, 0.4);
-    border:none;
-   
+.site-navigation-bottom-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
 }
-.innerForm:hover{
-    background-color: #eaeaea; 
-}
-.innerForm:focus{
-    background-color: #ffffff; 
-    color:#464646;
-    border:3px solid #f0c52e; 
+.item-social {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 20px;
 }
 
-
-.breadcrumbs {
-    margin:0 auto;
-    display:flex;
-  
-    width:1040px;
-    height:14px;
-    padding: 0;
-    padding-top: 29px;
-    padding-bottom: 49px;
-    /* padding-left: 60px; */
-    list-style-type: none;
-    font-size:14px;
-    line-height: 24px;
-    letter-spacing: 0.14px;
-
-    color: rgba(0, 0, 0, 0.3);
+.site-navigation-user-footer a:hover {
+  color: #ffffff;
 }
 
-.breadcrumbs a{
-    list-style-type: none;
-    font-size:14px;
-    line-height: 24px;
-    letter-spacing: 0.14px;
-
-    color: rgba(0, 0, 0, 0.3);
-}
-.breadcrumbs a:hover{
-    color: rgba(0, 0, 0, 0.6);
+.site-navigation-user-footer a:focus {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs a:focus{
-    color: rgba(0, 0, 0, 0.1);
-}
-.sorting{
-    display:flex;
-    margin:0;
-  width:100%;
-  height:71px;
-  background-color: #ebebeb;
-}
-.catalog-columns{
-    display:flex;
-    justify-content: flex-start;
+.site-navigation-bottom-footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.color-bluetooth{
-    /* font-family: Gilroy ExtraBold;
-font-size:18px;
-list-style-type: none;
-line-height: 24px; */
-letter-spacing: 0.18px;
+.site-navigation-bottom-footer a:focus {
+  color: rgba(255, 255, 255, 0.3);
 }
-.filters{
-    width:468px;
-    height:1287px;
-    background-color: #efefef;
+.wrapper-footer-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  width: 360px;
+  margin: 0;
+  /* margin-left:auto; */
+  /* min-height:200px; */
 }
-.filter-option{
-    list-style-type: none;
-    font-size:14px;
-    line-height: 40px;
-    letter-spacing: 0.14px;
-
-    color: #000000;
-}
-.filters fieldset{
-    border:none;
-}
-.filter-input:disabled + label{
-    color:#a6a6a6;
+.phone {
+  letter-spacing: none;
 }
 
+.address {
+  letter-spacing: none;
+}
+.footer-service-link {
+  color: #ffffff;
+}
+/* .compare-basket-footer {
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+
+} */
 
 
-.page-title{
- display:box;
-box-sizing: border-box;
- margin:0 auto;
- padding-left:60px;
- margin-top: 44px;
+.footer-icon {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 36px;
+  padding-left: 20px;
+  margin:0 23px;
+}
+.footer-link-icon{
+position: absolute;
+left:0;
+margin-top: 11px;
+}
+.footer-link-icon:hover{
+  opacity:0.6;
+}
+.footer-link-icon:focus{
+  opacity:0.3;
+}
+.footer-link-icon:active{
+  opacity:0.3;
+}
 
-  font-family: Gilroy ExtraBold;
+/* (28.2.2019 - Максименко) иконка и ссылка не связаны, как будто отдельные ссылки */
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+/* формы  */
+
+.form-item {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #000000;
+
+}
+
+.inner-form {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  list-style-type: none;
+  line-height: 18px;
+  background-color: #f2f2f2;
+  color: rgba(70, 70, 70, 0.4);
+  border: none;
+
+}
+
+.inner-form:hover {
+  background-color: #eaeaea;
+}
+
+.inner-form:focus {
+  background-color: #ffffff;
+  color: #464646;
+  border: 3px solid #f0c52e;
+}
+
+/* каталог */
+
+.center-wrapper {   /* это общий класс для центрирования контента по сетке */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.page-title {
+  display: box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 60px;
+  margin-top: 44px;
+
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   font-style: normal;
@@ -341,198 +477,329 @@ box-sizing: border-box;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000000;
-  width:1160px;
-  height:42px;
+  width: 1160px;
+  height: 42px;
 }
-.catalog{
-   
-    width:760px;
-    height:1170px;
-    padding-left: 70px;
-    
+
+.breadcrumbs {
+  margin: 0 auto;
+  display: flex;
+
+  width: 1040px;
+  height: 14px;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 49px;
+  /* padding-left: 60px; */
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.sorting-block {
+  position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 50%,#ebebeb 50%,#ebebeb 100%);
+}
+
+.sorting-block .center-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-block h2 {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+  margin: 0;
+  padding: 23px 176px 23px 68px;
+  box-sizing: border-box;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 844px;
+  margin: 0;
+  background-color: #ebebeb;
+  height: 71px;
+}
 
 
+.sorting h3 {
+  font-family: "Gilroy",Arial,sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: #000;
+  margin: 0 20px 0 73px;
 }
-.catalog-list{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin:0;
-    list-style: none;
+
+.sorting-list {
+  display: inline-block;
+  margin: 0 0 0 31px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sorting-list li {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+.sorting-list a {
+  font-family: "Open Sans Regular",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.sort-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 34px;
+  margin-left: 205px;
+}
+
+.sort-buttons a {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border: 5px solid transparent;
+  border-bottom: 10px solid #000;
+  box-sizing: border-box;
+}
+
+.sort-buttons a:last-child {
+  position: relative;
+  top: 3px;
+  right: -5px;
+  border: 5px solid transparent;
+  border-top: 10px solid #000;
+}
+.catalog-wrapper {
+  width: 100%;
+  background-image: linear-gradient(to right,#eee 0%,#eee 20%,#fff 20%,#fff 100%);
+}
+
+.catalog-wrapper .center-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filter {
+  width: 340px;
+  /* width: 468px; */
+  height: 1287px;
+  padding-left: 60px;
+  padding-top: 69px;
+  background-color: #efefef;
+}
+.filter-option {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+
+  color: #000000;
+}
+.filter fieldset {
+  border: none;
 
 }
-.catalog-item{
-    flex-wrap: nowrap;
-    letter-spacing: 0.18px;
-    font-size: 18px;
-    margin-bottom: 40px;
-    margin-right:40px;
-    width:360px;
-   
-    
+.legend{
+  list-style-type: none;
+  letter-spacing: 0.18px;
 }
-.catalog-item:nth-child(2n){
-    margin-right:0;
+.filter-input:disabled+label {
+  color: #a6a6a6;
 }
-.catalog-list a{
-    display:inline-block;
+.catalog {
+  width: 846px;
+  padding-top: 70px;
+  padding-left: 67px;
+  box-sizing: border-box;
 }
-.catalog-item:hover img{
-    opacity: 0.7;
-    /* background-color: #eeeeee; */
+
+/* .catalog {
+  width: 760px;
+  height: 1170px;
+  padding-left: 70px;
 }
-.catalog-item-price{
-    font-family: Gilroy Light;
-    font-size: 16px;
-    letter-spacing: 0.16px;
+ */
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  flex-wrap: nowrap;
+  letter-spacing: 0.18px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 360px;
+}
+
+
+
+.catalog-list a {
+  display: inline-block;
+}
+
+.catalog-item:hover img {
+  opacity: 0.7;
+  /* background-color: #eeeeee; */
+}
+
+.catalog-item-price {
+  font-family: Gilroy Light;
+  font-size: 16px;
+  letter-spacing: 0.16px;
 
 }
-.pagination-list{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    padding-left:30px;
-    padding-right: 30px;
-    list-style: none;
-    height:70px;
-    width:699px;
-    background-color: #ebebeb;
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  list-style: none;
+  height: 70px;
+  width: 699px;
+  background-color: #ebebeb;
 }
-.pagination-item a{
-    font-family: Gilroy ExtraBold;
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: 3.2px;
-    color:rgba(0,0,0,0.3);
+
+.pagination-item a {
+  font-family: 'Gilroy ExtraBold', Arial, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  color: rgba(0, 0, 0, 0.3);
 }
-.pagination-item a:hover{
-    color:rgba(0, 0, 0, 0.6);
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
+
 .pagination-item a:focus,
-.pagination-item a:active{
-    color:#000000;
+.pagination-item a:active {
+  color: #000000;
 }
-.pagination-item-current a{
-    color:#000000;
+
+.pagination-item-current a {
+  color: #000000;
 }
+
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
-.pagination-item-current a:active{
-    color:#000000;
+.pagination-item-current a:active {
+  color: #000000;
 }
-.pagination-item-forward{
-  
-   
-}
-.pagination-item-forward a{
-color:#000000;
-line-height:24px; 
-}
-.pagination-item-forward a:hover{
-    color:#000000;
-}
-.pagination-item-forward a:focus{
-   color:rgba(0,0,0,0.3) 
-}
-.pagination-item-center{
-display: flex;
-justify-content: space-between;
-width: 90px;
-   
-}
-.pagination-item-back{
-   
-}
-.pagination-item-back a{
-    color:#000000;
-    line-height: 24px;
-}
-.pagination-item-back a:hover{
-    color:#000000;
-}
-.pagination-item-back a:focus{
-    color:rgba(0,0,0,0.3);
-}
-.siteNavigation-user-footer a:hover{
-  color:#ffffff;
-}
-.siteNavigation-user-footer a:focus{
-    color:rgba(255, 255, 255, 0.3);
-  }
-  .siteNavigation-bottom-footer a:hover{
-color:rgba(255, 255, 255, 0.6);
-  }
-  .siteNavigation-bottom-footer a:focus{
-    color:rgba(255, 255, 255, 0.3);
-      }
-      .button{
-          border:none;
-      }
 
-      .wrapper-aboutus-contacts{
-        display:flex;
-          width:1160px;
-          margin:0 auto;
-          margin-bottom: 90px;
-      }
+.pagination-item-forward {}
 
-.aboutus{
-  direction:column;
-    width:480px;
-    margin-right: 120px;
+.pagination-item-forward a {
+  color: #000000;
+  line-height: 24px;
 }
-.contacts{
-    direction:column;
-  
-    width:560px; 
+
+.pagination-item-forward a:hover {
+  color: #000000;
 }
-.wrapper-footer{
-    display:flex;
-    /* margin-top:65px; */
-    /* padding:60px 0; */
-    /* flex-direction:row;  */
-  justify-content: center;
-  margin:0 auto;
 
-  padding:65px 0 70px 0;
-  /* list-style: none; */
-  width:1160px;
-  }
+.pagination-item-forward a:focus {
+  color: rgba(0, 0, 0, 0.3)
+}
 
-  .wrapper-footer-address{
-    display:flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content:space-between;
-width:360px;
-margin:0;
-/* margin-right:100px; */
+.pagination-item-center {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+ 
+}
 
-/* min-height:200px; */
-  }
-  .wrapper-footer-social{
-    display:flex;
-      flex-direction: column;
-      width:440px;
-      /* min-height:200px; */
-      text-align: center;
-      justify-content:space-between;
+.pagination-item-back {}
 
-  }
-  .wrapper-footer-phone{
-    display:flex;
-       flex-direction: column;
-     /* align-self: flex-start; */
-   text-align: right;
-    width:360px;
-margin:0;
-/* margin-left:auto; */
-    /* min-height:200px; */
-justify-content:space-between;
-  }
+.pagination-item-back a {
+  color: #000000;
+  line-height: 24px;
+}
+
+.pagination-item-back a:hover {
+  color: #000000;
+}
+
+.pagination-item-back a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 
-  /* body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */
-  
+/* конец */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body > * { background-color: rgba(255,0,0,0.5); } body > * > * { background-color: rgba(255,255,0,0.5); } body > * > * > * { background-color: rgba(0,255,0,0.5); } body > * > * > * { background-color: rgba(255,0,255,0.5); } */
+
+
+
+/*стили для внутренней от наставника */
+
+
+
+
+
+
+
+
+
+

@@ -13,36 +13,68 @@
 <body>
 
   <header class="main-header">
-    <div class="wrapper-mainlogo">
-    <a class="mainlogo" aria-label="Логотип DIVICE">
+    <a class="main-logo" aria-label="Логотип DIVICE">
       <img src="img/image_index/logo_divice.svg" width="163" height="35" alt="Логотип DIVICE">
     </a>
-    </div>
-   
+
 
     <nav class="main-navigation">
-      <div class="siteNavigation siteNavigation-user">
-        <a class="seach" href="seach.html">Поиск по сайту</a>
-        <a class="siteNavigation-user login-link1" href="login.html">Войти</a>
-        <a class="siteNavigation-user compare1-basket1" href=" compare.html">Сравнить</a>
-        <a class="siteNavigation-user compare1-basket1" href=" basket.html">Корзина</a>
+      <div class="site-navigation site-navigation-user">
+        <form class="main-search" action="https://echo.htmlacademy.ru" method="get">
+
+          <svg class="search-link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z" />
+          </svg>
+
+          <input type="search" class=" search" placeholder="Поиск по сайту">
+          <button class="button" aria-label="Отправить"></button>
+        </form>
+
+        <a class="site-navigation-user login-link-header" href="login.html">
+          <svg class="login-link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
+            <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
+                C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z" />
+          </svg>
+          Войти
+        </a>
+        <a class="site-navigation-user compare-basket-header" href="compare.html">
+
+          <svg class="login-link-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+            <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" />
+          </svg>
+          Сравнить
+        </a>
+        <a class="site-navigation-user compare-basket-header" href="basket.html">
+          <svg class="login-link-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+            <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" />
+            <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" />
+          </svg>
+          Корзина
+        </a>
       </div>
 
-      <ul class="siteNavigation siteNavigation-bottom">
+      <ul class="site-navigation site-navigation-bottom">
         <li class="nav-item-bold"><a href="catalog.html">Каталог товаров</a>
-          <ul class="dropMenue">
-<div class="wpapper_dropMenue_one">
-            <li class="innerItem"><a href="virtualReality.html">Виртуальная реальность</a></li>
-            <li class="innerItem"><a href="monopods.html">Моноподы для селфи</a></li>
-            <li class="innerItem"> <a href="actionCameras.html">Экшн-камеры</a></li>
-            </div>
-            <div class="wpapper_dropMenue_two">
-            <li class="innerItem"><a href="fitnessBraselet.html">Фитнес-браслеты</a></li>
-            <li class="innerItem"><a href="smartWatch.html">Умные часы</a></li>
-            </div>
-            <div class="wpapper_dropMenue_three">
-            <li class="innerItem"> <a href="quadcopters.html">Квадрокоптеры</a></li>
-            </div>
+          <ul class="drop-menue">
+            <li class="drop-menue-inner">
+              <ul class="drop-user-navigation">
+                <li class="drop-inner-item"><a href="virtualReality.html">Виртуальная реальность</a></li>
+                <li class="drop-inner-item"><a href="monopods.html">Моноподы для селфи</a></li>
+                <li class="drop-inner-item"> <a href="actionCameras.html">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li class="drop-menue-inner">
+              <ul class="drop-user-navigation">
+                <li class="drop-inner-item"><a href="fitnessBraselet.html">Фитнес-браслеты</a></li>
+                <li class="drop-inner-item"><a href="smartWatch.html">Умные часы</a></li>
+              </ul>
+            </li>
+            <li class="drop-menue-inner">
+              <ul class="drop-user-navigation">
+                <li class="drop-inner-item"> <a href="quadcopters.html">Квадрокоптеры</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li class="nav-item-bold"><a href="delivery.html">Доставка</a></li>
@@ -55,101 +87,123 @@
   <main class="container">
     <h1 class="visually-hidden">DIVICE</h1>
 
-    <div class="wrapper wrapper-aboutus-contacts">
-    <section class="aboutus">
-      <hr>
-      <!-- вместо hr  потом сделаем псевдоэлемнтом  -->
-      <h2 class="nav-item-bold about-contact">О нас</h2>
+    <div class="wrapper wrapper-about-us-contacts">
+      <section class="about-us">
+        <hr>
+        <!-- вместо hr  потом сделаем псевдоэлемнтом  -->
+        <h2 class="about-us-contacts">О нас</h2>
 
-      <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+        <p class="text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
 
-      <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими
-        транспортными
-        компаниями:</p>
-      <ul class="services">
-        <li class="nav-item-bold"><a href="info.html">Деловые линии</a></li>
-        <li class="nav-item-bold"><a href="info.html">Автотрейдинг</a></li>
-        <li class="nav-item-bold"><a href="info.html">ЖелДорЭкспедиция</a></li>
-      </ul>
+        <p class="text">Мы можем доставить ваш товар в самые отдаленные точки России! DIVICE работает со многими
+          транспортными
+          компаниями:</p>
+        <ul class="partners">
+          <li class="partners-item"><a href="info.html">Деловые линии</a></li>
+          <li class="partners-item"><a href="info.html">Автотрейдинг</a></li>
+          <li class="partners-item"><a href="info.html">ЖелДорЭкспедиция</a></li>
+        </ul>
 
-      <a class="detail-write nav-item-bold" href="info.html">Подробнее о нас</a>
+        <a class="detail-write-send" href="info.html">Подробнее о нас</a>
 
-    </section>
+      </section>
 
-    <section class="contacts">
+      <section class="contacts">
 
-      <hr>
-      <!-- Либо вместо hr указать псевдоэлемен before к h2 -->
-      <h2 class="nav-item-bold about-contact">Контакты</h2>
+        <hr>
+        <!-- Либо вместо hr указать псевдоэлемен before к h2 -->
+        <h2 class="about-us-contacts">Контакты</h2>
 
 
-      <p class="text">Вы можете забарать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность
-        покупки.
-        Всякое бывает.</p>
+        <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность
+          покупки.
+          Всякое бывает.</p>
 
-      <a class="map">
-        <img class="map" src="img/image_index/map-png.png" width="560" height="222" alt="Карта расположения офиса">
-      </a>
+        <a class="map">
+          <img class="map" src="img/image_index/map-png.png" width="560" height="222" alt="Карта расположения офиса">
+        </a>
 
-      <a class="detail-write nav-item-bold" href="info.html">Напишите нам</a>
-   
-    </section>
-  </div>
+        <a class="detail-write-send" href="info.html">Напишите нам</a>
+
+      </section>
+    </div>
   </main>
 
 
   <footer class="main-footer">
-<div class="wrapper wrapper-footer">
+    <div class="wrapper wrapper-footer">
 
-    <div class="wrapper-footer-address">
-      <a class="mainLogoFooter" href="main.html" aria-label="Логотип DIVICE">
-        <img src="img/image_index/logo_divice_yellow_svg.svg" width="163" height="35" alt="Логотип DIVICE">
-      </a>
-      <div class="address">г. Москва, ул. Строителей, 15</div>
-      <div>________</div>
-      <!--желтая полосочка-->
-    </div>
-    
-<div class="wrapper wrapper-footer-social">
-    <ul class="siteNavigation siteNavigation-bottom-footer">
-        <li class="nav-item-bold nav--item2"><a class="footer-service-link" href="delivery.html">Доставка</a></li>
-        <li class="nav-item-bold nav--item2"><a class="footer-service-link" href="assurance.html">Гарантия</a></li>
-        <li class="nav-item-bold nav--item2"><a class="footer-service-link" href="contact.html">Контакты</a></li>
-      </ul>
-      <div class="footer-social">
+      <div class="wrapper-footer-address">
+        <a class="main-logo-footer" href="main.html" aria-label="Логотип DIVICE">
+          <img src="img/image_index/logo_divice_yellow_svg.svg" width="163" height="35" alt="Логотип DIVICE">
+        </a>
+        <div class="address">г. Москва, ул. Строителей, 15</div>
+        <div>________</div>
+        <!--желтая полосочка-->
+      </div>
+
+      <div class="wrapper wrapper-footer-social">
+        <ul class="site-navigation site-navigation-bottom-footer">
+          <li class="item-social"><a class="footer-service-link" href="delivery.html">Доставка</a></li>
+          <li class="item-social"><a class="footer-service-link" href="assurance.html">Гарантия</a></li>
+          <li class="item-social"><a class="footer-service-link" href="contact.html">Контакты</a></li>
+        </ul>
+        <div class="footer-social">
           <a class="social-button" href="#" aria-label="Ссылка на социальную сеть Фэйсбук">Фэйсбук</a>
           <a class="social-button" aria-label="Ссылка на социальную сеть Инстаграм" href="#">Инстаграмм</a>
           <a class="social-button" aria-label="ССылка на социальную сеть Твитер" href="#">Твиттер</a>
         </div>
-</div>
-    <!-- <nav class="main-navigation"> -->
-      <div class="wrapper wrapper-footer-phone">
-      <div class="siteNavigation siteNavigation-user-footer">
-
-        <a class="login-link2" href="login.html">Войти</a>
-        <a class="siteNavigation-user compare2-basket2" href="compare.html">Сравнить</a>
-        <a class="siteNavigation-user compare2-basket2" href="basket.html">Корзина</a>
       </div>
+      <!-- <nav class="main-navigation"> -->
+      <div class="wrapper wrapper-footer-phone">
+        <div class="site-navigation site-navigation-user-footer">
 
-      <span class="phone">Тел.+7(495)495-95-95</span>
+          <a class="footer-icon" href="login.html">
+            <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+              <path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
+            </svg>
+            Войти
+          </a>
 
-      <a class="akadem-logo" href="https://htmlacademy.ru" aria-label="Логотип Академии">
-        <img src="img/image_index/logo-html.svg" width="27" height="35" alt="Логотип Академии">
-      </a>
-    <!-- </nav> -->
-</div>
+          <a class="site-navigation-user footer-icon" href="compare.html">
+            <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+              <path fill="#ffc600" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" />
+            </svg>
+            Сравнить
+
+          </a>
+
+          <a class="site-navigation-user footer-icon" href="basket.html">
+
+            <svg class="footer-link-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+              <path fill="#ffc600" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" />
+              <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" />
+            </svg>
+            Корзина</a>
+
+        </div>
+
+        <span class="phone">Тел.+7(495)495-95-95</span>
+
+        <a class="akadem-logo-footer" href="https://htmlacademy.ru" aria-label="Логотип Академии">
+          <img src="img/image_index/logo-html.svg" width="27" height="35" alt="Логотип Академии">
+        </a>
+        <!-- </nav> -->
+      </div>
+  </div>
   </footer>
-  <section class="modal modalLogin">
+
+  <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p class="form-item">Введите свой логин и пароль.</p>
-    <form class="loginForm" action="https://echo.htmlacademy.ru" method="post">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form-item">
         <label class="visually-hidden " for="user-login">Логин</label>
-        <input class="login-icon-user innerForm" id="user-login" type="text" name="login" placeholder="Логин">
+        <input class="login-icon-user inner-form" id="user-login" type="text" name="login" placeholder="Логин">
       </p>
       <p class="form-item">
         <label class="visually-hidden" for="user-password">Пароль</label>
-        <input class="login-icon-password innerForm" id="user-password" type="password" name="password" placeholder="Пароль">
+        <input class="login-icon-password inner-form" id="user-password" type="password" name="password" placeholder="Пароль">
       </p>
       <p class="form-item">
         <label class="login-checkbox">
@@ -162,13 +216,13 @@
         Войти
       </button>
     </form>
-    <button class="modalClose nav-item-bold" type="button">
+    <button class="modal-close nav-item-bold" type="button">
       Закрыть
     </button>
   </section>
 
-  <section class="modal modalMail">
-    <h2 class="hMailHidden">Напишите нам</h2>
+  <section class="modal modal-mail">
+    <h2 class="h-mail-hidden">Напишите нам</h2>
 
 
     <img src="img/image_index/modal-close.svg" width="55" height="55" alt="Закрыть" aria-label="Закрыть">
@@ -176,18 +230,18 @@
 
     <form action="https://echo.htmlacademy.ru" method="post">
       <p class="form-item"><label>Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия" class="innerForm" required>
+          <input type="text" name="name" placeholder="Имя Фамилия" class="inner-form" required>
         </label>
       </p>
       <p class="form-item"><label>Ваш e-mail:
-          <input type="email" name="email" placeholder="e-mail@example.com" class="innerForm" required>
+          <input type="email" name="email" placeholder="e-mail@example.com" class="inner-form" required>
         </label>
       </p>
       <p class="form-item">
         <label for="field-letter">Текст письма: </label><br>
-        <!-- <input type="text" name="mail" --><textarea placeholder="В свободной форме" class="innerForm" id="field-letter"></textarea>
+        <!-- <input type="text" name="mail" --><textarea placeholder="В свободной форме" class="inner-form" id="field-letter"></textarea>
 
-        <button class="detail-write nav-item-bold" type="submit">Отправить</button>
+        <button class="detail-write-send" type="submit">Отправить</button>
 
     </form>
 
