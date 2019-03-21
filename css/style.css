@@ -1274,12 +1274,12 @@ width: 5px;
 
 
 /* Главная Форма Напишите нам */
-.modal {
+/* .modal {
   display: none;
-}
+} */
 
 .modal-mail {
-  /* display: block; */
+  display: block;
   position: fixed;
   width: 960px;
   height: 553px;
