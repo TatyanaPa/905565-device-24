@@ -2,14 +2,32 @@ var link = document.querySelector(".right-to-us");
 var popup = document.querySelector(".modal-mail");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=name]");
+var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
+console.log(login.placeholder);
+
+//--Добавлена проверка на localstorage и получение значения 
+
+var isStorageSupport = true;
+var storage = "";
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 link.addEventListener("click", function (evt) {
 
   evt.preventDefault();
 
   popup.classList.add("modal-show");
+
+  //--Вывод значения из переменной storage в поле логина
+
+  if(storage) {
+    login.value = storage;
+    email.focus();
+  }
 
 });
 
@@ -20,15 +38,15 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value) {
-    // evt.preventDefault(); 
-    popup.classList.remove("modal-show");
-    popup.offsetWidth = popup.offsetWidth;
+  if (!login.value || !email.value) {
+    evt.preventDefault(); 
     popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
     console.log("Нужно ввести Ваше имя и Ваш e-mail");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", name.value);
+      localStorage.setItem("login", login.value);
     }
   }
 });
