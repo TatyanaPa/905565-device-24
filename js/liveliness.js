@@ -21,12 +21,11 @@ close.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
   if (!name.value || !email.value) {
-    evt.preventDefault();
-    popup.classList.remove("modal-error");
+    // evt.preventDefault(); 
+    popup.classList.remove("modal-show");
     popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
-
-    // console.log("Нужно ввести Ваше имя и Ваш e-mail");
+    popup.classList.remove("modal-error");
+    console.log("Нужно ввести Ваше имя и Ваш e-mail");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", name.value);
@@ -59,4 +58,3 @@ mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
 });
-
