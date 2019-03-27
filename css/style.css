@@ -1498,7 +1498,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.modal.modal-show {
+.modal-show {
   display: block;
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
